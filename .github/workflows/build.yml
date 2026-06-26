@@ -10,7 +10,7 @@ jobs:
           python-version: '3.11'
       - run: pip install pyinstaller
       - run: pyinstaller --onefile --noconsole launcher.py
-      - uses: actions/upload-artifact@v3
+      - uses: actions/upload-artifact@v4
         with:
           name: 자리뽑기
           path: dist/launcher.exe
